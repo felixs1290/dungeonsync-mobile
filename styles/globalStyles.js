@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
   // Shared Styles (used across multiple screens)
-  container: {
+  screenContainer: {
     flex: 1,
     backgroundColor: '#1F2937',
   },
@@ -42,32 +42,32 @@ export const styles = StyleSheet.create({
     borderColor: '#6B7280',
     marginVertical: 8,
     fontFamily: 'Montserrat_400Regular',
-    flexDirection: 'row', // For password input with icon
+    flexDirection: 'row',
     alignItems: 'center',
     position: 'relative',
     height: 48,
   },
   passwordContainer: {
-  flexDirection: 'row',
-  alignItems: 'center',
-  backgroundColor: '#4B5563',
-  borderRadius: 8,
-  borderWidth: 1,
-  borderColor: '#6B7280',
-  marginVertical: 8,
-  height: 48, // Matches styles.input height
-},
-passwordInput: {
-  flex: 1,
-  color: '#FFFFFF',
-  paddingVertical: 12,
-  paddingLeft: 12,
-  paddingRight: 40, // Space for the eye icon
-  fontFamily: 'Montserrat_400Regular',
-},
-eyeIcon: {
-  padding: 10,
-},
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#4B5563',
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: '#6B7280',
+    marginVertical: 8,
+    height: 48,
+  },
+  passwordInput: {
+    flex: 1,
+    color: '#FFFFFF',
+    paddingVertical: 12,
+    paddingLeft: 12,
+    paddingRight: 40,
+    fontFamily: 'Montserrat_400Regular',
+  },
+  eyeIcon: {
+    padding: 10,
+  },
   loginButton: {
     backgroundColor: '#FBBF24',
     padding: 14,
@@ -126,6 +126,7 @@ eyeIcon: {
     paddingVertical: 10,
     borderTopWidth: 1,
     borderTopColor: '#4B5563',
+    width: '100%',
   },
   iconButton: {
     alignItems: 'center',
@@ -190,7 +191,16 @@ eyeIcon: {
     fontSize: 16,
   },
 
-  // PlayerScreen Styles
+   // PlayerScreen Styles
+   listContainer: {
+    flex: 1,
+    paddingHorizontal: 16,
+    paddingBottom: 80, // Add padding to prevent list from overlapping footer
+  },
+  footerContainer: {
+    backgroundColor: '#1F2937',
+    alignItems: 'center', // Center contents horizontally
+  },
   promptText: {
     color: '#D1D5DB',
     fontSize: 16,
@@ -198,12 +208,56 @@ eyeIcon: {
     textAlign: 'center',
     marginVertical: 10,
   },
-  characterContainer: {
-    flex: 1,
-    paddingTop: 80,
+  characterCard: {
+    flexDirection: 'row',
+    backgroundColor: '#374151',
+    borderRadius: 12,
+    marginVertical: 8,
+    padding: 12,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 4,
+    elevation: 5,
+    width: '100%',
   },
-  characterGrid: {
+  characterCardImage: {
+    width: 100,
+    height: 100,
+    borderRadius: 8,
+    marginRight: 12,
+  },
+  characterCardInfo: {
+    flex: 1,
     justifyContent: 'center',
+  },
+  characterCardName: {
+    fontSize: 18,
+    color: '#FBBF24',
+    fontFamily: 'Montserrat_600SemiBold',
+    marginBottom: 4,
+  },
+  characterCardLevel: {
+    fontSize: 14,
+    color: '#D1D5DB',
+    fontFamily: 'Montserrat_400Regular',
+  },
+  characterList: {
+    paddingBottom: 20,
+  },
+  touchableBox: {
+    backgroundColor: '#374151',
+    padding: 14,
+    borderRadius: 8,
+    alignItems: 'center',
+    marginVertical: 10,
+    width: '90%', // Consistent width
+    alignSelf: 'center', // Center the button
+  },
+  touchableText: {
+    color: '#FBBF24',
+    fontSize: 18,
+    fontFamily: 'Cinzel_700Bold',
   },
 
   // CharacterScreen Styles
@@ -318,22 +372,6 @@ eyeIcon: {
     fontFamily: 'Cinzel_700Bold',
     color: '#FBBF24',
     marginBottom: 24,
-  },
-  touchableBox: {
-    backgroundColor: '#374151',
-    padding: 20,
-    borderRadius: 12,
-    borderWidth: 1,
-    borderColor: '#4B5563',
-    marginVertical: 10,
-    width: '90%',
-    maxWidth: 400,
-    alignItems: 'center',
-  },
-  touchableText: {
-    color: '#FBBF24',
-    fontSize: 18,
-    fontFamily: 'Cinzel_700Bold',
   },
   environmentBox: {
     flexDirection: 'row',
@@ -631,18 +669,18 @@ eyeIcon: {
 
   // Under DMManageEnvironmentScreen Styles
   shareButton: {
-  marginLeft: 10,
+    marginLeft: 10,
   },
   codeContainer: {
-  alignItems: 'center',
-  marginVertical: 10,
+    alignItems: 'center',
+    marginVertical: 10,
   },
   codeTextContainer: {
-  flexDirection: 'row',
-  alignItems: 'center',
-  marginBottom: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 10,
   },
   qrCode: {
-  marginVertical: 10,
-},
+    marginVertical: 10,
+  },
 });
