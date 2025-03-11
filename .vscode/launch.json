@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Debug Expo",
+        "request": "launch",
+        "type": "node",
+        "program": "${workspaceFolder}/node_modules/.bin/expo",
+        "args": ["start"]
+      }
+    ]
+  }
