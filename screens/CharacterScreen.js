@@ -43,7 +43,7 @@ export default function CharacterScreen({ route, navigation }) {
 
   return (
     <DismissKeyboard>
-      <View style={styles.container}>
+      <View style={styles.screenContainer}>
       <BackButton onPress={() => navigation.goBack()} />
       <View style={styles.characterContainer}>
         <Card>

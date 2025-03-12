@@ -53,7 +53,7 @@ export default function LoginScreen({ navigation }) {
   return (
     <View style={styles.loginContainer}>
       <Text style={styles.header}>Login</Text>
-      <View style={styles.card}>
+      <View style={styles.loginCard}>
         <TextInput
           style={styles.input}
           placeholder="Email"

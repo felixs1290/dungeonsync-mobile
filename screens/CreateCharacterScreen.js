@@ -107,7 +107,7 @@ export default function CreateCharacterScreen({ navigation }) {
 
   return (
     <DismissKeyboard>
-      <View style={styles.container}>
+      <View style={styles.screenContainer}>
         <BackButton onPress={() => navigation.goBack()} />
         <ScrollView style={styles.characterContainer}>
           <Card>

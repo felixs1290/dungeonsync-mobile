@@ -46,7 +46,7 @@ export default function SignupScreen({ navigation }) {
         <MaterialIcons name="arrow-back" size={24} color="#FBBF24" />
       </TouchableOpacity>
       <Text style={styles.header}>Sign Up</Text>
-      <View style={styles.card}>
+      <View style={styles.loginCard}>
         <TextInput
           style={styles.input}
           placeholder="Username"

@@ -93,7 +93,7 @@ export default function DMHomeScreen({ navigation, route }) {
   }
 
   return (
-    <View style={styles.container}>
+    <View style={styles.screenContainer}>
       <View style={styles.headerContainer}>
         <Text style={styles.header}>Welcome, {username}</Text>
       </View>

@@ -171,7 +171,7 @@ export default function CreateMerchantScreen({ navigation, route = {} }) {
 
   return (
     <DismissKeyboard>
-      <View style={styles.container}>
+      <View style={styles.screenContainer}>
         <BackButton onPress={() => navigation.goBack()} />
         <View style={[styles.headerContainer, { marginTop: 40 }]}>
           <Text style={styles.header}>Create Merchant</Text>

@@ -148,12 +148,14 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 16,
+    backgroundColor: '#1F2937',
   },
   signupSection: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
     marginTop: 16,
+    marginBottom: 10,
   },
   signupText: {
     color: '#D1D5DB',

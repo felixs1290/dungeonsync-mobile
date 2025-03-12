@@ -76,7 +76,7 @@ export default function DMCreateEnvironmentScreen({ navigation, route }) {
   };
 
   return (
-    <View style={styles.container}>
+    <View style={styles.screenContainer}>
       <BackButton onPress={() => navigation.navigate('DMHome')} />
       <ScrollView contentContainerStyle={styles.scrollContent}>
         <View style={styles.headerContainer}>
