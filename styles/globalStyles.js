@@ -20,7 +20,7 @@ export const styles = StyleSheet.create({
   },
   card: {
     backgroundColor: '#374151',
-    padding: 20,
+    padding: 0,
     borderRadius: 12,
     borderWidth: 1,
     borderColor: '#4B5563',
@@ -29,7 +29,7 @@ export const styles = StyleSheet.create({
     shadowOpacity: 0.3,
     shadowRadius: 4,
     elevation: 5,
-    width: '90%',
+    width: '100%',
     maxWidth: 400,
     alignSelf: 'center',
   },
@@ -107,7 +107,7 @@ export const styles = StyleSheet.create({
     fontFamily: 'Cinzel_700Bold',
     color: '#FBBF24',
     marginVertical: 12,
-  },
+    },
   row: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -127,6 +127,10 @@ export const styles = StyleSheet.create({
     borderTopWidth: 1,
     borderTopColor: '#4B5563',
     width: '100%',
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
   },
   iconButton: {
     alignItems: 'center',
@@ -195,9 +199,11 @@ export const styles = StyleSheet.create({
    listContainer: {
     flex: 1,
     paddingHorizontal: 16,
-    paddingBottom: 80, // Add padding to prevent list from overlapping footer
+    paddingBottom: 60, // Add padding to prevent list from overlapping footer
   },
   footerContainer: {
+    paddingHorizontal: 16,
+    paddingBottom: 60,
     backgroundColor: '#1F2937',
     alignItems: 'center', // Center contents horizontally
   },
@@ -265,7 +271,7 @@ export const styles = StyleSheet.create({
     flex: 1,
     paddingTop: 60,
     alignItems: 'center',
-  },
+    },
   characterDetailImage: {
     width: 150,
     height: 150,
@@ -319,6 +325,8 @@ export const styles = StyleSheet.create({
   backpackContainer: {
     flex: 1,
     paddingTop: 80,
+    paddingTop: 60, // Space for BackButton
+    paddingBottom: 60, // Space for IconBar
   },
   itemCard: {
     flexDirection: 'row',
@@ -613,6 +621,7 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap',
     marginVertical: 8,
+    padding: 10,
   },
   categoryButton: {
     backgroundColor: '#6B7280',
@@ -631,6 +640,7 @@ export const styles = StyleSheet.create({
   flatList: {
     flexGrow: 0,
     maxHeight: 400,
+    paddingBtton: 60,
   },
   categoryItem: {
     padding: 10,
@@ -640,9 +650,35 @@ export const styles = StyleSheet.create({
   equipmentItem: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    padding: 10,
+    alignItems: 'center',
+    paddingVertical: 12,
+    paddingHorizontal: 0,
+    borderTopWidth: 1,
     borderBottomWidth: 1,
-    borderBottomColor: '#4B5563',
+    borderColor: '#6B7280',
+    backgroundColor: '#1F2937', // Match screen background
+  },
+  equipmentLeft: {
+    flex: 1,
+    justifyContent: 'center',
+    paddingLeft: 16,
+  },
+  equipmentName: {
+    color: '#FFFFFF',
+    fontSize: 13, // Smaller than current 16
+    fontFamily: 'Montserrat_600SemiBold',
+  },
+  equipmentCategory: {
+    color: '#D1D5DB',
+    fontSize: 11, // Even smaller
+    fontFamily: 'Montserrat_400Regular',
+  },
+  equipmentCost: {
+    color: '#FBBF24', // Stand out for cost
+    fontSize: 14,
+    fontFamily: 'Montserrat_600SemiBold',
+    textAlign: 'right',
+    paddingRight: 16,
   },
 
   // Miscellaneous (less commonly used or transitional)
